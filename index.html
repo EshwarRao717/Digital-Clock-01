@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Premium Digital Clock</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-animation"></div>
+
+<div class="clock-app">
+
+    <div class="top-bar">
+        <h2 id="greeting">Good Evening 🌙</h2>
+
+        <div class="controls">
+            <button id="formatBtn">24H</button>
+            <button id="themeBtn">☀️</button>
+        </div>
+    </div>
+
+    <div class="clock-card">
+
+        <div class="time-box">
+            <h1 id="time">00:00:00</h1>
+            <span id="ampm"></span>
+        </div>
+
+        <div class="progress-ring">
+            <svg width="130" height="130">
+                <circle cx="65" cy="65" r="55"></circle>
+                <circle cx="65" cy="65" r="55" id="progress"></circle>
+            </svg>
+            <div class="sec-text" id="seconds">00</div>
+        </div>
+
+        <div class="date-info">
+            <p id="day">Monday</p>
+            <p id="date">1 January 2026</p>
+            <p id="zone">Asia/Kolkata</p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
